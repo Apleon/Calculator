@@ -83,5 +83,3 @@ themeToggle.addEventListener('click', () => {
     themeLink.setAttribute('href', 'light-theme.css');
   }
 });
-
-adfsdfsdf;
