@@ -2,7 +2,7 @@
 
 Это простое веб-приложение калькулятора, созданное с использованием чистого JavaScript и собранное с помощью Webpack.
 
-**Live Demo:** []()
+**Live Demo:** [https://apleon.github.io/Calculator/](https://apleon.github.io/Calculator/)
 
 ## Запуск Приложения (How to run the app)
 
