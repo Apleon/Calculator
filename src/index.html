@@ -6,7 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <script src="./index.js"></script>
+    <main class="calculator">
+       <div class="display">
+         <output id="result">0</output>
+       </div>
+       <div class="buttons">
+            <div class="button-row">
+                <button class="operator">AC</button>
+                <button class="operator">+/-</button>
+                <button class="operator">%</button>
+                <button class="operator right-corner">/</button>
+            </div>
+            <div class="button-row">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator right-corner">*</button>
+            </div>
+            <div class="button-row">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator right-corner">-</button>
+            </div>
+            <div class="button-row">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator right-corner">+</button>
+            </div>
+            <div class="button-row">
+                <button class="number zero">0</button>
+                <button class="number dot">.</button>
+                <button class="operator equal">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
 </body>
 </html>

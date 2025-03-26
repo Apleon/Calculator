@@ -1,0 +1,120 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator {
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.display {
+    background-color: #222222;
+    color: #fff;
+    padding: 16px 24px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 67px;
+    line-height: 1.2;
+    min-height: calc(67px * 1.2 + 16px + 16px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+#result {
+    display: block;
+    text-align: right;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4d4d2;
+}
+
+.button-row {
+    display: flex;
+    width: 100%;
+}
+
+.buttons button {
+    font-size: 27px;
+    height: 85px;
+    flex: 1%;
+    min-width: 0;
+    position: relative;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #bdbdbd;
+    border-right: 1px solid #bdbdbd;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.1s ease;
+    box-sizing: border-box;
+}
+
+.button-row button:first-child {
+    border-left: none;
+}
+
+.button-row:first-child button {
+    border-top: none;
+}
+
+.button-row button:last-child {
+    border-right: none;
+}
+
+.number, .dot {
+    background-color: #f9f9f9;
+    font-weight: 400;
+}
+
+.operator {
+    font-weight: 400;
+}
+
+.operator:not(.right-corner):not(.equal) {
+    background-color: #d4d4d2;
+    color: black;
+}
+
+.right-corner, .equal {
+    color: white;
+}
+
+.zero {
+    flex-grow: 2;
+    background-color: #f9f9f9;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.buttons button:active {
+    filter: brightness(0.85);
+}

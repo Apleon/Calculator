@@ -9,6 +9,14 @@ module.exports = {
     clean: true,
   },
   mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -19,8 +27,8 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
-    open: true,       
-    hot: true,        
-    port: 8080,       
+    open: true,
+    hot: true,
+    port: 8080,
   },
 };
